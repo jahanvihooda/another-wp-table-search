@@ -1,0 +1,29 @@
+[wpv-filter-start hide="false"] [wpv-filter-controls]
+<div class="well graduate-well">
+    <div class="form-group graduate-courses-text-input">
+        <label>[wpml-string context="wpv-views"]Search:[/wpml-string]</label>
+        [wpv-filter-search-box output="bootstrap"]
+    </div>
+    <div class="form-group graduate-courses-text-input">
+        <label>[wpml-string context="wpv-views"]Term:[/wpml-string]</label>
+        [wpv-control-postmeta field="wpcf-mes-course-term" type="select" default_label="- All -" url_param="wpv-wpcf-mes-course-term"]
+    </div>
+    <div class="form-group graduate-courses-text-input">
+        <label>[wpml-string context="wpv-views"]Year:[/wpml-string]</label>
+        [wpv-control-postmeta field="wpcf-mes-course-year" type="select" default_label="- All -" url_param="wpv-wpcf-mes-course-year"]
+    </div>
+    <div class="form-group graduate-courses-text-input">
+        <label>[wpml-string context="wpv-views"]Day:[/wpml-string]</label>
+        [wpv-control-postmeta field="wpcf-mes-course-day-time" type="select" source="custom" url_param="wpv-wpcf-mes-course-day-time"
+        values=",Monday,Tuesday,Wednesday,Thursday,Friday" display_values="- All -,Monday,Tuesday,Wednesday,Thursday,Friday"]
+    </div>
+    <div class="graduate-buttons-group">
+        <div class="graduate-button">
+            [wpv-filter-submit type="button" output="bootstrap" class="btn btn-primary"]
+        </div>
+        <div class="graduate-button">
+            [wpv-filter-reset type="button" output="bootstrap" class="btn btn-danger"]
+        </div>
+    </div>
+</div>
+[/wpv-filter-controls] [wpv-filter-end]

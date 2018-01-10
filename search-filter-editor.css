@@ -1,0 +1,17 @@
+.graduate-courses-text-input {
+  min-width: 250px;
+  width: 24%;
+  padding: 10px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.graduate-buttons-group {
+  text-align: right;
+}
+
+.graduate-button {
+  padding-right: 13px;
+  display: inline-block;
+  vertical-align: top;
+}

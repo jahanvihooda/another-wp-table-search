@@ -1,0 +1,46 @@
+[wpv-layout-start]
+<table class="table table-striped inverted">
+    <thead>
+        <tr>
+            <th style="width: 200px;">Code</th>
+            <th>Title</th>
+            <th>Day/Time</th>
+            <th>Term</th>
+            <th>Year</th>
+        </tr>
+    </thead>
+    <tbody>
+        [wpv-items-found]
+        <!-- wpv-loop-start -->
+        <wpv-loop>
+            <tr>
+                <td>[types field='mes-course-code'][/types]</td>
+                <td>
+                    <a href="[wpv-post-url]">[types field='mes-course-name'][/types]</a>
+                </td>
+                <td>[types field='mes-course-day-time'][/types]</td>
+                <td>[types field='mes-course-term'][/types]</td>
+                <td>[types field='mes-course-year'][/types]</td>
+            </tr>
+        </wpv-loop>
+        <!-- wpv-loop-end -->
+        [/wpv-items-found]
+    </tbody>
+    [wpv-no-items-found]
+    <strong>[wpml-string context="wpv-views"]No items found[/wpml-string]</strong>
+    [/wpv-no-items-found]
+</table>
+[wpv-pagination]
+<div class="control-wrapper">
+    <div class="page-control">Page [wpv-pager-current-page] of [wpv-pager-num-page]
+    </div>
+
+    <div class="page-control">
+        [wpv-pager-prev-page][wpml-string context="wpv-views"] Previous [/wpml-string][/wpv-pager-prev-page]
+    </div>
+
+    <div class="page-control">
+        [wpv-pager-next-page][wpml-string context="wpv-views"] Next [/wpml-string][/wpv-pager-next-page]
+    </div>
+</div>
+[/wpv-pagination] [wpv-layout-end]
